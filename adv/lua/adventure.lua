@@ -830,7 +830,8 @@ function M.getreferencepos(self,val)
 				else
 					movingpos=M.getactorpos(self,cmdobj)
 				end
-				pos_x=movingpos.x+tonumber(dig[1]:sub(2))				
+				local offset_x=tonumber(dig[1]:sub(2)) or 0
+				pos_x=movingpos.x+offset_x
 			else
 				pos_x=tonumber(dig[1])
 			end
