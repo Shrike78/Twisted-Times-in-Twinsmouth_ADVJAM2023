@@ -16,7 +16,8 @@
     ],
     "Lua.workspace.library": [
         "~/Library/Application Support/Code/User/globalStorage/astronachos.defold",
-        ".defold/api"
+        ".defold/api",
+        ".defold/assets"
     ],
     "glsllint.additionalStageAssociations": {
         ".fp": "frag",
