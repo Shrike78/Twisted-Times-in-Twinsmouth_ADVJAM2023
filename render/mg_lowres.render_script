@@ -116,7 +116,7 @@ function mg_fixed_update(self)
 	render.disable_state(render.STATE_STENCIL_TEST)
 
 	render.set_depth_mask(false)
-	render.draw_debug2d()
+	render.draw_debug3d()
 end
 
 function mg_normal_update(self)
@@ -152,7 +152,7 @@ function mg_normal_update(self)
 	render.disable_state(render.STATE_STENCIL_TEST)
 
 	render.set_depth_mask(false)
-	render.draw_debug2d()
+	render.draw_debug3d()
 end
 
 function update(self)
