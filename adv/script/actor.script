@@ -2,6 +2,8 @@ local anim = require "adv/lua.anim"
 local gop = require "adv/lua.gop"
 local adv = require "adv/lua/adventure"
 
+local global_follow = nil
+
 go.property("player", 0)
 go.property("visible", true)
 
@@ -96,6 +98,9 @@ end
 function final(self)
 	-- Add finalization code here
 	-- Remove this function if not needed
+	if global_follow == msg.url(".") then
+		global_follow = nil
+	end
 end
 
 function update(self, dt)			
